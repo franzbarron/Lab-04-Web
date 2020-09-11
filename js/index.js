@@ -7,7 +7,7 @@ document.querySelector('#todo-form').addEventListener('submit', (e) => {
   const checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
   checkbox.addEventListener('change', checkboxChange);
-  const textNode = document.createTextNode(newTodoText.value);
+  const textNode = document.createTextNode(' ' + newTodoText.value);
   newTodoElt.appendChild(checkbox);
   newTodoElt.appendChild(textNode);
   document.querySelector('#todo-list').appendChild(newTodoElt);
